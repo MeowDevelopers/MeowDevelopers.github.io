@@ -3,6 +3,12 @@
 
 @import "variables";
 
+@font-face {
+    font-family: 'Gyeonggi_Batang_Regular';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/2410-3@1.0/Batang_Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
 /*!
  * Start Bootstrap - Grayscale Bootstrap Theme (http://startbootstrap.com)
  * Code licensed under the Apache License v2.0.
@@ -11,11 +17,11 @@
 
 html,
 body {
-  font-family: "Maven Pro", sans-serif;
+  font-family: "Gyeonggi_Batang_Regular", sans-serif;
   color: $font-color;
-  background-color: $primary-color;
+  background-color: #fff;
   font-size: 1.2rem;
-  line-height: 1.6;
+  line-height: 2.0;
   text-align: justify;
   scroll-behavior: smooth;
 }
@@ -67,24 +73,142 @@ small {
 
 p {
   padding: 0.5rem 0rem;
-  line-height: 1.5;
+  line-height: 2.0;
+  font-size: 16px;
   @media (min-width: 768px) {
     padding: 0.3rem 0rem;
-    line-height: 1.6;
+    line-height: 2.0;
   }
 }
 
 a {
-  color: $secondary-color;
+  color: #222;
   -webkit-transition: all 0.2s ease-in-out;
   -moz-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
-  text-decoration: none;
+  text-decoration: none; // 기본적으로 밑줄 없음
   &:hover,
   &:focus {
-    color: darken($secondary-color, 20%);
+    color: #1cad86;
+    text-decoration: underline; // 호버 시 밑줄 표시
   }
 }
+
+.speech-bubble {
+  display: inline-block;
+  position: relative;
+  background: #daeef6; 
+  color: black;
+  padding: 12px 18px;
+  border-radius: 20px;
+  font-size: 14px;
+  text-align: center;
+  max-width: 700px;
+}
+
+/* 둥근 삼각형 추가 */
+.speech-bubble::after {
+  content: "";
+  position: absolute;
+  bottom: -10px; /* 아래쪽에 추가 */
+  left: 10px;
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-top: 12px solid #daeef6; /* 노란색 삼각형 */
+}
+
+
+
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3개씩 정렬 */
+  gap: 20px;
+  padding: 20px;
+}
+
+.project-card-link {
+  text-decoration: none; /* 기본 링크 스타일 제거 */
+  display: block; /* 카드 전체 클릭 가능 */
+}
+
+.grid-item {
+  background: white;
+  padding: 15px;
+  border-radius: 10px;
+  text-align: center;
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+
+.grid-item:hover {
+  transform: scale(1.05);
+  box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.project-thumbnail {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.project-title {
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 30px;
+  color: #1cad86;
+}
+
+.project-date {
+  font-size: 14px;
+  color: #777;
+  margin-bottom: -5px;
+}
+
+/* 세부 목차 기본적으로 숨김 */
+.project-details {
+  display: none;
+  background-color: #f9f9f9;
+  padding: 10px;
+  margin-top: 10px;
+  border-radius: 8px;
+  text-align: left;
+}
+
+.project-details p {
+  margin: 0;
+}
+
+.read-more {
+  display: block;
+  margin-top: 5px;
+  font-weight: bold;
+  color: #1cad86;
+  text-decoration: none;
+}
+
+.read-more:hover {
+  text-decoration: underline;
+}
+
+
+blockquote {
+  background: #f5f5f5; /* 화이트 배경 */
+  font-size: 16px;
+  border: 1px solid #ddd; /* 얇은 테두리 */
+  border-radius: 8px; /* 둥근 모서리 */
+  padding: 15px 20px;
+  margin: 20px 0;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.05); /* 가벼운 그림자 */
+  color: #222;
+  line-height: 2.0;
+  white-space: pre-line; /* 줄바꿈 유지 */
+}
+
+
 
 .nav-item {
   text-align: center;
@@ -93,7 +217,7 @@ a {
   transition: background 0.3s ease-in-out;
   &:hover {
     outline: none;
-    background-color: rgba($font-color, 0.3);
+    // background-color: #fcffde;
   }
   &:focus,
   &:active {
@@ -115,7 +239,7 @@ a {
   margin-bottom: 0;
   border-bottom: 1px solid rgba($font-color, 0.3);
   text-transform: uppercase;
-  background-color: $primary-color;
+  // background-color: $primary-color;
   overflow-y: auto;
 
   .navbar-toggler {
@@ -148,7 +272,7 @@ a {
       padding 0.5s ease-in-out;
     &.top-nav-collapse {
       padding: 0;
-      background: $primary-color;
+      background: #fff;
       border-bottom: 1px solid rgba($font-color, 0.3);
     }
   }
@@ -165,19 +289,19 @@ a {
   width: 100%;
   height: 100svh;
   text-align: center;
-  color: $font-color;
+  color: #004eff;
   background-color: $primary-color;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
   -o-background-size: cover;
   background-attachment: scroll;
-  background-image: url("{{ site.baseurl }}/img/intro-bg.jpg");
+  background-image: url("{{ site.baseurl }}/img/intro-bg.png");
   background-position: center center;
   background-repeat: none;
 
   .intro-text {
-    font-size: 1.6rem;
+    font-size: 1.2rem;
   }
 }
 
@@ -190,7 +314,7 @@ a {
   bottom: 0px;
   background: linear-gradient(
     180deg,
-    rgba(139, 167, 32, 0) 0%,
+    rgba(139, 167, 32, 0) 10%,
     $primary-color 100%
   );
   pointer-events: none;
@@ -259,11 +383,12 @@ a {
   ol {
     text-align: left;
     margin: 0 0 25px;
-    line-height: 1.5;
+    line-height: 2.0;
+    font-size: 16px;
     list-style-position: inside;
   }
   pre {
-    padding: 0;
+    padding: 15px;
     > code {
       text-align: left;
     }
@@ -328,7 +453,7 @@ ul.social-buttons li a {
 }
 
 footer {
-  padding: 10rem 0 15rem 0;
+  padding: 1rem 0 1rem 0;
   text-align: center;
   p {
     margin: 0;

@@ -14,7 +14,9 @@
 
           <div>
             {% for post in paginator.posts %}
-              {% include post-list.html %}
+              {% if post.section-type == "study-notes" %}
+                {% include post-list.html %}
+              {% endif %}
             {% endfor %}
           </div>
 
