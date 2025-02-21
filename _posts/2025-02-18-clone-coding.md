@@ -39,4 +39,5 @@ thumbnail : /img/post_img/오늘의집-클론코딩.png
 ![jira](/img/post_img/clone-coding-review.png)
 ![jira](/img/post_img/clone-coding-review2.png)
 
-클론코딩을 진행하면서 많은 이야기 끝에 스터디원들과 함께 프로젝트 주제를 선정하였고 기본 구조만 가져와서 새로운 프로젝트를 진행하고 있습니다.  
+진행하면서 서로의 코드 스타일이나 습관에 대해 많은 이야기를 나눌 수 있었고, 
+현재는 클론코딩을 진행하면서 만들었던 기본 구조를 가져와서 새로운 프로젝트를 진행하고 있습니다.  
