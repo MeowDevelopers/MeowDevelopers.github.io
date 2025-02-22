@@ -36,8 +36,8 @@ thumbnail : /img/post_img/오늘의집-클론코딩.png
 
 또한 코드리뷰를 진행하면서 단순한 개발이 아니라 팀으로써 함께 무언가 만들어 나가고 배워가는 시간을 중점으로 두었습니다. 
 
-![jira](/img/post_img/clone-coding-review.png)
-![jira](/img/post_img/clone-coding-review2.png)
+![jira1](/img/post_img/clone-coding-review.png)
+![jira2](/img/post_img/clone-coding-review2.png)
 
 진행하면서 서로의 코드 스타일이나 습관에 대해 많은 이야기를 나눌 수 있었고, 
 현재는 클론코딩을 진행하면서 만들었던 기본 구조를 가져와서 새로운 프로젝트를 진행하고 있습니다.  
