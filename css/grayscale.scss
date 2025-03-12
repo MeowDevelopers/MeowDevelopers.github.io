@@ -208,6 +208,21 @@ blockquote {
   white-space: pre-line; /* 줄바꿈 유지 */
 }
 
+opinion {
+  display: block; /* 블록 요소로 변경 */
+  background: #fffdf4;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 15px 20px;
+  margin: 20px 0;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.05);
+  color: #222;
+  line-height: 2.0;
+  white-space: pre-wrap; /* 줄바꿈 유지하면서 자동 줄바꿈도 가능 */
+}
+
+
 
 
 .nav-item {
@@ -391,6 +406,9 @@ blockquote {
     padding: 15px;
     > code {
       text-align: left;
+      white-space: pre-wrap !important;  /* 자동 줄바꿈 */
+      word-wrap: break-word !important;  /* 긴 단어 줄바꿈 */
+      overflow-wrap: break-word !important;  /* 긴 단어가 넘칠 경우 줄바꿈 */
     }
   }
   img.emoji {
