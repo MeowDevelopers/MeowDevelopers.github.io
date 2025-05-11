@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://meowdevelopers.github.io/sitemap.xml
