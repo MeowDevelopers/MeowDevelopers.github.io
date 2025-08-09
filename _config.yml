@@ -2,9 +2,7 @@
 
 # NB! Set your site's url, otherwise nothing will work
 url: "https://meowdevelopers.github.io"
-
-# Google tracking id
-google-tracking-id: "UA-XXXXXXXX-X"
+baseurl: ""  
 
 #############
 # HTML Head #
@@ -73,3 +71,5 @@ plugins:
   - jekyll-paginate
   - jekyll-spaceship
   - jekyll-sitemap
+  - jekyll-feed
+
