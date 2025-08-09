@@ -9,15 +9,15 @@ layout: null
 
     <!-- 메인 페이지 -->
     <url>
-        <loc>{{ site.url }}</loc>
-        <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
+        <loc>{{ site.url | absolute_url }}</loc>
+        <lastmod>{{ 'now' | date_to_xmlschema }}</lastmod>
         <changefreq>daily</changefreq>
         <priority>1.0</priority>
     </url>
 
     {% for post in site.posts %}
     <url>
-        <loc>{{ site.url }}{{ post.url }}</loc>
+        <loc>{{ post.url | absolute_url }}</loc>
 
         {% if post.lastmod %}
         <lastmod>{{ post.lastmod | date_to_xmlschema }}</lastmod>
