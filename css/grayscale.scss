@@ -4,10 +4,11 @@
 @import "variables";
 
 @font-face {
-    font-family: 'Gyeonggi_Batang_Regular';
-    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/2410-3@1.0/Batang_Regular.woff') format('woff');
-    font-weight: 400;
-    font-style: normal;
+  font-family: "Gyeonggi_Batang_Regular";
+  src: url("https://fastly.jsdelivr.net/gh/projectnoonnu/2410-3@1.0/Batang_Regular.woff")
+    format("woff");
+  font-weight: 400;
+  font-style: normal;
 }
 /*!
  * Start Bootstrap - Grayscale Bootstrap Theme (http://startbootstrap.com)
@@ -21,7 +22,7 @@ body {
   color: $font-color;
   background-color: #fff;
   font-size: 1.2rem;
-  line-height: 2.0;
+  line-height: 2;
   text-align: justify;
   scroll-behavior: smooth;
 }
@@ -32,29 +33,30 @@ h3,
 h4,
 h5,
 h6 {
-  text-transform: uppercase;
-  font-weight: 400;
   letter-spacing: 0.07rem;
+  margin-left: -14px;
+  padding-left: 0;
+  text-align: left;
 }
 
 h1 {
-  font-size: 2.5rem;
+  font-size: 2.2rem;
 }
 
 h2 {
-  font-size: 2rem;
+  font-size: 1.8rem;
 }
 
 h3 {
-  font-size: 1.75rem;
-}
-
-h4 {
   font-size: 1.5rem;
 }
 
-h5 {
+h4 {
   font-size: 1.3rem;
+}
+
+h5 {
+  font-size: 1.1rem;
 }
 
 h4 {
@@ -68,16 +70,18 @@ h4 {
 }
 
 small {
-  font-size: 70%;
+  font-size: 0.7rem;
 }
 
 p {
   padding: 0.5rem 0rem;
-  line-height: 2.0;
+  line-height: 2;
   font-size: 16px;
+  margin: 0;
   @media (min-width: 768px) {
     padding: 0.3rem 0rem;
-    line-height: 2.0;
+    line-height: 2;
+    margin: 0;
   }
 }
 
@@ -97,7 +101,7 @@ a {
 .speech-bubble {
   display: inline-block;
   position: relative;
-  background: #daeef6; 
+  background: #daeef6;
   color: black;
   padding: 12px 18px;
   border-radius: 20px;
@@ -118,8 +122,6 @@ a {
   border-right: 10px solid transparent;
   border-top: 12px solid #daeef6; /* 노란색 삼각형 */
 }
-
-
 
 .project-grid {
   display: grid;
@@ -160,6 +162,7 @@ a {
   font-weight: bold;
   margin-top: 30px;
   color: #1cad86;
+  text-align: center;
 }
 
 .project-date {
@@ -194,7 +197,6 @@ a {
   text-decoration: underline;
 }
 
-
 blockquote {
   background: #f5f5f5; /* 화이트 배경 */
   font-size: 16px;
@@ -204,7 +206,7 @@ blockquote {
   margin: 20px 0;
   box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.05); /* 가벼운 그림자 */
   color: #222;
-  line-height: 2.0;
+  line-height: 2;
   white-space: pre-line; /* 줄바꿈 유지 */
 }
 
@@ -218,12 +220,9 @@ opinion {
   margin: 20px 0;
   box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.05);
   color: #222;
-  line-height: 2.0;
+  line-height: 2;
   white-space: pre-wrap; /* 줄바꿈 유지하면서 자동 줄바꿈도 가능 */
 }
-
-
-
 
 .nav-item {
   text-align: center;
@@ -252,9 +251,9 @@ opinion {
 
 .navbar-custom {
   margin-bottom: 0;
-  border-bottom: 1px solid rgba($font-color, 0.3);
+  border-bottom: 1px solid rgba($font-color, 0.3) #fff !important;
   text-transform: uppercase;
-  // background-color: $primary-color;
+  background-color: #fff !important;
   overflow-y: auto;
 
   .navbar-toggler {
@@ -276,15 +275,9 @@ opinion {
     border-bottom: none;
     letter-spacing: 1px;
     background: transparent;
-    -webkit-transition:
-      background 0.5s ease-in-out,
-      padding 0.5s ease-in-out;
-    -moz-transition:
-      background 0.5s ease-in-out,
-      padding 0.5s ease-in-out;
-    transition:
-      background 0.5s ease-in-out,
-      padding 0.5s ease-in-out;
+    -webkit-transition: background 0.5s ease-in-out, padding 0.5s ease-in-out;
+    -moz-transition: background 0.5s ease-in-out, padding 0.5s ease-in-out;
+    transition: background 0.5s ease-in-out, padding 0.5s ease-in-out;
     &.top-nav-collapse {
       padding: 0;
       background: #fff;
@@ -383,10 +376,8 @@ opinion {
 
 .content-section {
   margin-top: 100px;
-  padding-top: 100px;
   @media (min-width: 768px) {
     margin-top: 125px;
-    padding-top: 125px;
   }
   img {
     display: block;
@@ -398,17 +389,32 @@ opinion {
   ol {
     text-align: left;
     margin: 0 0 25px;
-    line-height: 2.0;
+    line-height: 2;
     font-size: 16px;
-    list-style-position: inside;
+    padding-inline-start: 20px;
+    margin: 0;
   }
+
+  ul li,
+  ol li {
+    margin-bottom: 0.5rem;
+  }
+
+  /* 중첩된 li 요소들의 간격 제거 */
+  ul ul li,
+  ol ol li,
+  ul ol li,
+  ol ul li {
+    margin-bottom: 0;
+  }
+
   pre {
     padding: 15px;
     > code {
       text-align: left;
-      white-space: pre-wrap !important;  /* 자동 줄바꿈 */
-      word-wrap: break-word !important;  /* 긴 단어 줄바꿈 */
-      overflow-wrap: break-word !important;  /* 긴 단어가 넘칠 경우 줄바꿈 */
+      white-space: pre-wrap !important; /* 자동 줄바꿈 */
+      word-wrap: break-word !important; /* 긴 단어 줄바꿈 */
+      overflow-wrap: break-word !important; /* 긴 단어가 넘칠 경우 줄바꿈 */
     }
   }
   img.emoji {

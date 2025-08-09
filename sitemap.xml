@@ -7,6 +7,14 @@ layout: null
         xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd"
         xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
+    <!-- 메인 페이지 -->
+    <url>
+        <loc>{{ site.url }}</loc>
+        <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>1.0</priority>
+    </url>
+
     {% for post in site.posts %}
     <url>
         <loc>{{ site.url }}{{ post.url }}</loc>
