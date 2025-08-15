@@ -2,7 +2,9 @@
 
 # NB! Set your site's url, otherwise nothing will work
 url: "https://meowdevelopers.github.io"
-baseurl: ""  
+baseurl: "" 
+github_username : MeowDevelopers
+
 
 #############
 # HTML Head #

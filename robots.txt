@@ -1,8 +1,10 @@
 ---
-permalink: /robots.txt
+permalink: robots.txt
 layout: null
 ---
 
-User-agent: *
+User-agent: *  
+
 Disallow: /norobots/
-Sitemap: {{ "/sitemap.xml" | relative_url | absolute_url }}
+Sitemap: https://meowdevelopers.github.io/sitemap.xml
+Sitemap: {{ "/sitemap.xml" |  absolute_url }}

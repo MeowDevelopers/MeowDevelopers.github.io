@@ -292,53 +292,46 @@ opinion {
 
 .intro {
   display: flex;
-  position: relative;
-  flex-direction: column;
-  width: 100%;
-  height: 100svh;
-  text-align: center;
-  color: #004eff;
-  background-color: $primary-color;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
+  justify-content: flex-end;
+  padding:20%;
+  align-items: center;
+  height: 100vh;
+
+  /* 배경: 이미지 + 반투명 그라데이션 오버레이 */
+  background-image:
+    url("{{ site.baseurl }}/img/intro-bg.png");
+  background-position: center;
   background-size: cover;
-  -o-background-size: cover;
-  background-attachment: scroll;
-  background-image: url("{{ site.baseurl }}/img/intro-bg.png");
-  background-position: center center;
-  background-repeat: none;
+  background-repeat: no-repeat;
+  background-attachment: fixed; /* 스크롤 시 패럴랙스 느낌 */
+  overflow: hidden;
+
+  color: #000000; /* 텍스트 색상 */
 
   .intro-text {
-    font-size: 1.2rem;
+    transform: translate(20%); /* X: 오른쪽 20%, Y: 수직 중앙 */
+    font-size: 1.5rem;
+    font-weight: 800;
+    animation: fadeInUp 1s ease forwards;
+    writing-mode: vertical-rl;
+    text-orientation: upright;
   }
 }
 
-.intro:after {
-  content: "";
-  position: absolute;
-  left: 0px;
-  right: 0px;
-  height: 50%;
-  bottom: 0px;
-  background: linear-gradient(
-    180deg,
-    rgba(139, 167, 32, 0) 10%,
-    $primary-color 100%
-  );
-  pointer-events: none;
-  @media (min-width: 768px) {
-    height: 20%;
+/* 부드러운 등장 애니메이션 */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
   }
 }
 
-.intro .wrapper {
-  align-content: end;
-  height: 40%;
-}
 
-.intro a {
-  padding-top: 5%;
-}
+
 
 @-webkit-keyframes pulse {
   from {
