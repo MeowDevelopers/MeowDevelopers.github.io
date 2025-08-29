@@ -70,7 +70,8 @@ h4 {
 }
 
 small {
-  font-size: 0.7rem;
+  font-size: 0.85rem;
+  color: #2fad1c;
 }
 
 p {
@@ -86,7 +87,7 @@ p {
 }
 
 a {
-  color: #222;
+  color: #000000;
   -webkit-transition: all 0.2s ease-in-out;
   -moz-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
@@ -372,6 +373,7 @@ opinion {
   @media (min-width: 768px) {
     margin-top: 125px;
   }
+
   img {
     display: block;
     max-width: 100%;
@@ -467,6 +469,16 @@ ul.social-buttons li a {
 
 .post-list {
   text-align: left;
+}
+
+.post-content a {
+  color: #6106ff; // 기본 링크 색상
+  text-decoration: none;
+  
+  &:hover {
+    color: #58c2d5; // 호버 시 색상
+    text-decoration: underline;
+  }
 }
 
 footer {
