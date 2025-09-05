@@ -48,7 +48,7 @@ title: AWS EC2/ECS 세미나와 채팅 시스템 설계
     - 간편 로그인 : 카카오톡  
     
     <br>
-    ![firebase1](/img/post_img/카카오로그인%20API.png)
+    ![카카오로그인](/img/post_img/카카오로그인%20API.png)
     <br>
     <small><center> 로그인 동작 구조 파악하는 소셜팀(근우님/유경님/요한님)</center></small>
 
