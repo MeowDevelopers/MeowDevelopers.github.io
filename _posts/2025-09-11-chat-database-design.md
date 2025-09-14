@@ -2,7 +2,7 @@
 layout: post
 section-type: study-notes
 has-comments: true
-date: 2025-09-11 00:00:00 +0900
+date: 2025-09-11 00:00:00 +0000
 title: 채팅 데이터베이스 테이블 설계
 ---
 
