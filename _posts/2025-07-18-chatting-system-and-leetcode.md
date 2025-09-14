@@ -2,6 +2,7 @@
 layout: post
 section-type: study-notes
 has-comments: true
+date: 2025-07-18 00:00:00 +0000
 title: 채팅 시스템 설계 (1/2 진행)과 라이브 코테
 ---
 

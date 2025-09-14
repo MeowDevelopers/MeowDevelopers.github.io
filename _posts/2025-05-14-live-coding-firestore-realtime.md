@@ -2,6 +2,7 @@
 layout: post
 section-type: study-notes
 has-comments: true
+date: 2025-05-14 00:00:00 +0000
 title: Firebase RealTime & Remote Config 연동, 라이브 코테
 ---
 

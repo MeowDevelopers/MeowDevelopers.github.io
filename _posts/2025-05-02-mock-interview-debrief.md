@@ -2,6 +2,7 @@
 layout: post
 section-type: study-notes
 has-comments: true
+date: 2025-05-02 00:00:00 +0000
 title: 시스템 설계 모의 면접  
 ---
 

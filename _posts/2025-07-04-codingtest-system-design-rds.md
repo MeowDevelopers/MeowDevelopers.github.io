@@ -2,6 +2,7 @@
 layout: post
 section-type: study-notes
 has-comments: true
+date: 2025-07-04 00:00:00 +0000
 title:
   알림 시스템 설계, (세미나) RDS 스케일 다운은 언제할까? & 라이브 코딩 테스트
 ---

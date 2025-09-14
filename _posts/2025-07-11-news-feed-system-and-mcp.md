@@ -2,6 +2,7 @@
 layout: post
 section-type: study-notes
 has-comments: true
+date: 2025-07-11 00:00:00 +0000
 title: 뉴스 피드 시스템 설계, MCP 개념 정리, CSS의 조건 처리(if)
 ---
 

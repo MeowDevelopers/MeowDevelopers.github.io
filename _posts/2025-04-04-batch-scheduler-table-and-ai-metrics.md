@@ -2,6 +2,7 @@
 layout: post
 section-type: study-notes
 has-comments: true
+date: 2025-04-04 00:00:00 +0000
 title: 배치를 호출하는 방식 조사, AI모델의 Metrics, 개발 도서 읽기
 ---
 

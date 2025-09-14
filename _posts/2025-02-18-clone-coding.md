@@ -2,6 +2,7 @@
 layout: post
 section-type: project
 has-comments: true
+date: 2025-02-18 00:00:00 +0000
 title: 오늘의 집 클론코딩
 thumbnail: /img/post_img/오늘의집-클론코딩.png
 ---

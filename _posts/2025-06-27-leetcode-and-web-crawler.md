@@ -2,6 +2,7 @@
 layout: post
 section-type: study-notes
 has-comments: true
+date: 2025-06-27 00:00:00 +0000
 title: 웹 크롤러 설계 및 라이브 코테
 ---
 

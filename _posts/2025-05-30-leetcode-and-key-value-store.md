@@ -2,6 +2,7 @@
 layout: post
 section-type: study-notes
 has-comments: true
+date: 2025-05-30 00:00:00 +0000
 title: 코딩 테스트 , 개발 책 읽기
 ---
 

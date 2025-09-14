@@ -2,6 +2,7 @@
 layout: post
 section-type: study-notes
 has-comments: true
+date: 2025-05-08 00:00:00 +0000
 title: 스터디 회고 
 ---
 

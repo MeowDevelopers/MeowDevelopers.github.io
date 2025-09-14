@@ -2,6 +2,7 @@
 layout: post
 section-type: study-notes
 has-comments: true
+date: 2025-03-21 00:00:00 +0000
 title: 배치 서버 예제 코드 작성 & 머신러닝과 딥러닝 개념 
 ---
 

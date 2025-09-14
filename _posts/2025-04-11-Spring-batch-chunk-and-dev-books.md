@@ -2,6 +2,7 @@
 layout: post
 section-type: study-notes
 has-comments: true
+date: 2025-04-11 00:00:00 +0000
 title: 스프링 배치로 파일을 청크 단위로 DB 저장,업데이트 / 개발 도서 읽기
 ---
 

@@ -2,6 +2,7 @@
 layout: post
 section-type: study-notes
 has-comments: true
+date: 2025-05-23 00:00:00 +0000
 title: 라이브 코테 및 면접 연습, 개발 책 복기
 ---
 

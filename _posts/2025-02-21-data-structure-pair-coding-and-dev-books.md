@@ -2,6 +2,7 @@
 layout: post
 section-type: study-notes
 has-comments: true
+date: 2025-02-21 00:00:00 +0000
 title: 자료구조 페어 코딩, 개발 도서 읽기
 ---
 

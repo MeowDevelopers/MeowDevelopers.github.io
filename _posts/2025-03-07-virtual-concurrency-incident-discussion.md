@@ -2,6 +2,7 @@
 layout: post
 section-type: study-notes
 has-comments: true
+date: 2025-03-07 00:00:00 +0000
 title: 가상으로 풀어보는 장애 문제 토론 
 ---
 
