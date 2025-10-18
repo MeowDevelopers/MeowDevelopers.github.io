@@ -72,6 +72,6 @@ sass:
 plugins:
   - jekyll-paginate
   - jekyll-spaceship
-  - jekyll-sitemap
+  # - jekyll-sitemap
   - jekyll-feed
 
