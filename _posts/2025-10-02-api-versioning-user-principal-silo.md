@@ -4,6 +4,7 @@ section-type: study-notes
 has-comments: true
 date: 2025-10-02 00:00:00 +0000
 title: API 버전 관리하는 이유 / User Principal 이란 ? / 사일로 현상은 무엇일까?
+오늘 함께한 멤버 ❣️ : 준호님 / 은지님 / 유경님 / 소영님 / 요한님 / 근우님
 ---
 
 <h5> 스터디 진행 일시</h5>

@@ -4,6 +4,7 @@ section-type: study-notes
 has-comments: true
 date: 2025-09-18 00:00:00 +0000
 title: 도메인 주도 설계와 애자일의 철학
+오늘 함께한 멤버 ❣️ : 준호님 / 은지님 / 유경님 / 소영님 / 요한님 / 근우님
 ---
 
 <h5> 스터디 진행 일시</h5>
