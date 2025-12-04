@@ -66,7 +66,7 @@ public sealed class Shape permits Circle, Rectangle {}
 <h4>Git에 대한 전략 및 고찰</h4>
 🙌 준호님의 세미나 🙌  
 <br>
-<embed src="/img/Git_에_대한_전략_및_고찰.pdf" width="100%" height="800px" />
+<embed src="/img/Git.pdf" width="100%" height="800px" />
 
 <br>
 
