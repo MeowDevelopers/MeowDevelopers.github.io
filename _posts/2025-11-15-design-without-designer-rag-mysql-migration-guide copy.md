@@ -115,8 +115,8 @@ title: 디자이너 없이 디자인하는 법 / MVC1과 MVC2 패턴의 차이�
 <h4>MySQL 5.7에서 MySQL 8.0 으로 마이그레이션하는 방법</h4>  
 🙌 은지님과 유경님의 세미나 🙌 
 
-* 은지님과 유경님이 정리한 confluence글 
-    * [MySQL 5.7에서 8.0 이관하기](https://kej12516.atlassian.net/wiki/x/AwCS)
+* 은지님과 유경님이 정리한 글 
+<embed src="/img/mysql_migration.pdf" width="100%" height="800px" />
 
 <br>  
 
